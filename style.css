@@ -3,20 +3,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-:root{
-    --some-style: #FD6E0A;
-    --bold-f: 400;
-    --bold-s: 600;
-    --bold-se: 700;
-    --bold-e: 800;
-    --dark: #181818;
-    --home-bg: #FFF8F3;
-    --normel-bg: #fff;
+.primary-color{
+    color: #FD6E0A;
 }
-#home{
-    height: 100vh;
-    width: 100%;
-    background: var(--home-bg);
+.primary-bg-color{
+    background: #FD6E0A;
+}
+.light-color{
+    color: #FFF8F3;
+}
+.light-bg-color{
+    background: #FFF8F3;
+}
+.dark-color{
+    color: #181818;
+}
+.dark-bg-color{
+    background: #181818;
+}
+.bold-400{
+    font-weight: 400;
+}
+.bold-600{
+    font-weight: 600;
+}
+.bold-700{
+    font-weight: 700;
+}
+.bold-800{
+    font-weight: 800;
+}
+
+/* There was some impotent and common style on top  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+    align-items: center;
+}
+nav h2{
+    font-size: 45px;
+}
+nav h2 span{
+    color: var(--some-style);
+}
+nav h2,
+nav ul li,
+button{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
 }
