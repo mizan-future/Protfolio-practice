@@ -20,26 +20,3 @@
     width: 100%;
     background: var(--home-bg);
 }
-nav{
-    display: flex;
-    height: 15vh;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-nav ul{
-    display: flex;
-    gap: 30%;
-    justify-content: center;
-    align-items: center;
-}
-nav ul li{
-    list-style: none;
-}
-nav ul li a,
-nav h2 a{
-    text-decoration: none;
-}
-nav ul li button{
-    padding: 0 10px;
-}
