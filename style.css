@@ -14,7 +14,7 @@
     font-size: 20px;
     color: #FFF8F3;
     background: #FD6E0A;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 h1 {
@@ -109,11 +109,12 @@ nav ul {
 
 #about,
 #do,
-#summery {
+#summery,
+footer {
     margin: 130px 230px;
     background: #FFF8F3;
     text-align: center;
-    padding: 131px 157px;
+    padding: 131px 30px;
 }
 
 .about-info {
@@ -124,14 +125,15 @@ nav ul {
     margin-top: 55px;
 }
 
-#do {
+#do,
+#summery {
     background: #fff;
 }
 
 #do .card-body {
     margin-top: 100px;
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
     text-align: left;
     align-items: center;
     justify-content: center;
@@ -167,6 +169,81 @@ nav ul {
 #do .card-body .card p {
     font-size: 16px;
 }
-#summery{
-    background: #fff;
+
+#summery h3,
+#summery h4,
+#summery p,
+#summery h5,
+footer {
+    text-align: left;
+}
+
+.columns {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#summery h4,
+#summery h5 {
+    margin: 15px 0;
+}
+
+.columns .box {
+    border-bottom: 1px solid #181818;
+    padding: 25px 0;
+}
+
+#summery .btn-primary {
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    margin: 0;
+    padding: 131px 230px;
+}
+footer .connect{
+    width: 60%;   
+}
+footer .connect h3,
+footer .connect p {
+    margin-bottom: 2.5rem;
+}
+
+footer .connect .img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+footer .connect .img img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.message form{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.message form input[type=text],
+.message form input[type=email],
+.message form textarea{
+    width: 150%;
+    font-size: 16px;
+    border: none;
+}
+.message form input,
+.message form textarea{
+    outline: none;
+    padding: 1.2rem 1.6rem;
+    font-weight: normal;
 }
